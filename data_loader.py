@@ -3,7 +3,7 @@ from torchvision import datasets
 from torchvision import transforms
 
 def get_loader(config):
-    """Builds and returns Dataloader for MNIST and SVHN dataset."""
+    """Returns Dataloader for MNIST and SVHN dataset."""
     
     transform = transforms.Compose([
                     transforms.Scale(config.image_size),

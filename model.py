@@ -19,7 +19,7 @@ def conv(c_in, c_out, k_size, stride=2, pad=1, bn=True):
     return nn.Sequential(*layers)
 
 class G12(nn.Module):
-    """Generator for transfering from mnist to svhn"""
+    """Generator for transfering from MNIST to SVHN"""
     def __init__(self, conv_dim=64):
         super(G12, self).__init__()
         # encoding blocks
@@ -46,7 +46,7 @@ class G12(nn.Module):
         return out
     
 class G21(nn.Module):
-    """Generator for transfering from svhn to mnist"""
+    """Generator for transfering from SVHN to MNIST"""
     def __init__(self, conv_dim=64):
         super(G21, self).__init__()
         # encoding blocks
@@ -73,7 +73,7 @@ class G21(nn.Module):
         return out
     
 class D1(nn.Module):
-    """Discriminator for mnist."""
+    """Discriminator for MNIST."""
     def __init__(self, conv_dim=64, use_labels=False):
         super(D1, self).__init__()
         self.conv1 = conv(1, conv_dim, 4, bn=False)
@@ -90,7 +90,7 @@ class D1(nn.Module):
         return out
 
 class D2(nn.Module):
-    """Discriminator for svhn."""
+    """Discriminator for SVHN."""
     def __init__(self, conv_dim=64, use_labels=False):
         super(D2, self).__init__()
         self.conv1 = conv(3, conv_dim, 4, bn=False)

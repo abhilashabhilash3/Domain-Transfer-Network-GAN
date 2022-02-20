@@ -1,6 +1,6 @@
 # MNIST-to-SVHN and SVHN-to-MNIST
 
-PyTorch Implementation of [CycleGAN](https://arxiv.org/pdf/1703.10593.pdf) and [Semi-Supervised GAN](https://arxiv.org/abs/1606.01583) for Domain Transfer.
+PyTorch Implementation of CycleGAN and Semi-Supervised GAN for Domain Transfer.
 
 ![alt text](gif/cyclegan.png)
 
@@ -17,8 +17,8 @@ PyTorch Implementation of [CycleGAN](https://arxiv.org/pdf/1703.10593.pdf) and [
 #### Clone the repository
 
 ```bash
-$ git clone https://github.com/yunjey/mnist-svhn-transfer.git
-$ cd mnist-svhn-transfer/
+$ git clone https://github.com/abhilashabhilash3/MNIST-SVHN-Transfer.git
+$ cd MNIST-SVHN-Transfer/
 ```
 
 #### Download the dataset
@@ -43,7 +43,7 @@ $ python main.py --use_labels=True --use_reconst_loss=False
 
 ## Results
 
-#### 1) CycleGAN (should be re-uploaded)
+#### 1) CycleGAN
 
 From SVHN to MNIST            |  From MNIST to SVHN
 :-------------------------:|:-------------------------:
