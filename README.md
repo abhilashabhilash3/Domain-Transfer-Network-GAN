@@ -1,4 +1,4 @@
-# MNIST-to-SVHN and SVHN-to-MNIST
+# Domain Transfer Network to transform MNIST-to-SVHN and SVHN-to-MNIST
 
 PyTorch Implementation of CycleGAN and Semi-Supervised GAN for Domain Transfer.
 
